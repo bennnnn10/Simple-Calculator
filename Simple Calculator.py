@@ -10,8 +10,8 @@ def calculator():
         #   Obtain user input for the operation
         math_operation = int(input("Choose one of the four math operations (1-4): "))
         #   Collect two numbers from the user
-        first_number = input("Enter the first number: ")
-        second_number = input("Enter the second number: ")
+        first_number = float(input("Enter the first number: "))
+        second_number = float(input("Enter the second number: "))
         #   Execute an operation based on user input
         if math_operation == 1:
             result = first_number + second_number
