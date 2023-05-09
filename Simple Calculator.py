@@ -27,8 +27,14 @@ def calculator():
             calculator()
         #   Print the result
         print("The result is:", result)
-#   Request if the user wants to make another computation.
-#   If the user does not want to execute further calculation, the function should be closed.
+        #   Request if the user wants to make another computation.
+        try_again = input("Would you like to make another calculation? (y/n): ")
+
+        if try_again.lower() == "y":
+            calculator()
+        else:
+        #   If the user does not want to execute further calculation, the function should be closed.
+            print("Thank you")
     #   Handle runtime errors
     #   Handle division by zero error
     except ZeroDivisionError:
