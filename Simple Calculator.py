@@ -13,6 +13,18 @@ def calculator():
         first_number = input("Enter the first number: ")
         second_number = input("Enter the second number: ")
         #   Execute an operation based on user input
+        if math_operation == 1:
+            result = first_number + second_number
+        elif math_operation == 2:
+            result = first_number - second_number
+        elif math_operation == 3:
+            result = first_number * second_number
+        elif math_operation == 4:
+            result = first_number / second_number
+        else:
+            #   Deal with an invalid operation number
+            print("Invalid operation number.")
+            calculator
         #   Print the result
     #   Handle runtime errors
     #   Handle division by zero error
