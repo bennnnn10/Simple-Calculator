@@ -24,11 +24,16 @@ def calculator():
         else:
             #   Deal with an invalid operation number
             print("Invalid operation number.")
-            calculator
+            calculator()
         #   Print the result
+#   Request if the user wants to make another computation.
+#   If the user does not want to execute further calculation, the function should be closed.
     #   Handle runtime errors
     #   Handle division by zero error
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.")
-#   Request if the user wants to make another computation.
-#   If the user does not want to execute further calculation, the function should be closed.
+        calculator()
+    #   Handle invalid input error
+    except ValueError:
+        print("Error: Invalid input.")
+        calculator()
