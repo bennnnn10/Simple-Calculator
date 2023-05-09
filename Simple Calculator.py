@@ -26,6 +26,7 @@ def calculator():
             print("Invalid operation number.")
             calculator()
         #   Print the result
+        print("The result is:", result)
 #   Request if the user wants to make another computation.
 #   If the user does not want to execute further calculation, the function should be closed.
     #   Handle runtime errors
@@ -37,3 +38,5 @@ def calculator():
     except ValueError:
         print("Error: Invalid input.")
         calculator()
+
+calculator()
