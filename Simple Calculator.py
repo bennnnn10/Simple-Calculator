@@ -2,7 +2,11 @@
 #BSCPE 1-4
 #Object-Oriented Programming
 
-#   Prompting the user to select an operation
+def calculator():
+    try:
+        #   Prompting the user to select an operation
+        print("Please choose an operation")
+        print("Addition(1), Subtraction(2), Multiplication(3), or Division(4)")
 #   Obtain user input for the operation
 #   Collect two numbers from the user
 #   Execute an operation based on user input
