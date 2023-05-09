@@ -11,5 +11,9 @@ def calculator():
 #   Collect two numbers from the user
 #   Execute an operation based on user input
 #   Print the result
+    #   Handle runtime errors
+    #   Handle division by zero error
+    except ZeroDivisionError:
+        print("Error: Cannot divide by zero.")
 #   Request if the user wants to make another computation.
 #   If the user does not want to execute further calculation, the function should be closed.
